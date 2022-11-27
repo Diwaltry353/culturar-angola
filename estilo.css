@@ -1,0 +1,483 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{ /*Definindos as cores e tipos de letra para todo HTML*/ 
+    --preto: #0000;
+    --branco: #ffff;
+    --castaho:  #663300;
+    --amarelo: #ffcc00;
+    --vermelho: #ff0000;
+    --tipo-letra: "arial", Helvetica, sans-sarif;
+}
+
+body{ /*Estilizando o corpo da pagina */
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+    max-width: 1600px;
+}
+.div-menu{
+    
+    box-shadow:  1px 2px 3px black;
+}
+.nav-menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 6rem;
+}
+.u-lista{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: -0px;
+}
+.a-link{
+    padding: 20px 10px;
+    color: var(--amarelo);
+    text-decoration: none;
+}
+.a-link:hover{
+    color: var(--branco);
+    border-bottom: 1px solid var(--branco);
+    transition: 0.5s;
+}
+#div-menu{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+
+}
+.div-mobile-menu-icon{
+    display: none;
+}
+.div-mobile-menu{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+.li-link{
+    padding: 20px 10px;
+}
+.i-logo{
+    width: 150px;
+    height: 100px;
+}
+.div-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    
+}
+
+.contacto{
+  margin: 20px;
+}
+#form-pesq{
+  height: 35px;
+}
+#f-cadastro{
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  
+  
+}
+.div-bemvindo{
+    color: var(--amarelo);
+    display: block;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 550px;
+    align-self: center;
+    
+}
+.h-bemvindo{
+    text-align: center;
+    font-size: 40px;
+   
+}
+#carouselExampleInterval{
+    margin-top: 50px;
+}
+.container{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 55px calc( (100% - 960px)/3);
+    width: 1200px;
+    margin: 0px;
+}
+
+.div-column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .div-column img:hover {
+    opacity: 1;
+  }
+  .titulo-tg{
+    margin-top: 120px;
+  }
+
+  
+  .di-row {
+    margin: 8px -16px;
+  }
+  
+  
+  .di-row,
+  .di-row > .di-column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .di-column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .di-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .di-contente {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .sec-form{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .div-video video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 300px;
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .di-column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .div-container-span {
+    position: relative;
+    display: none;
+    
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+
+
+
+  /* Set a style for all buttons */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancel-btn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+.div-img-container {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .div-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .form-modal-content  {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  @media screen and (max-width: 730px) {
+    .nav-menu{
+        padding: 1.5rem 4rem;
+        margin-bottom: -30px;
+    }
+    .u-lista{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    
+    .div-mobile-menu-icon{
+        display: block;
+        justify-content: flex-start;
+    }
+    .div-mobile-menu-icon button{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+     .div-mobile-menu ul{
+       display: flex; 
+        flex-direction: column;
+        text-align: start;
+        padding-bottom: 0.2rem;
+    
+    }
+    .li-lista{
+        padding: 0 0  -25px 0;
+        width: 100%;
+        font-size: 2rem;
+        margin-left: -60px;
+    }
+    .li-lista:hover{
+        background-color: #ffcc00;
+        color: #ffff;
+        border: none;
+        
+    }
+    .a-link {
+        padding-top: 1.2rem;
+        padding-left: 10px;
+        padding-right: 180px;
+       
+    }
+    .a-link:hover{
+        color: var(--branco);
+        border-bottom: none;
+    }
+    .div-mobile-menu{
+        padding: 1rem 2rem;
+
+    } 
+    
+    .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .div-mobile-menu, .login-button button {
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .form-pesquisar{
+        display: none;
+    }
+    .carousel{
+        display: none; 
+    }
+    .div-rodapes-redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer{
+        display: flex;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+    }
+    .in-email {
+        max-width: 250px;
+    }
+    .h-bemvindo{
+        display: none;
+    }
+    .copright{
+        margin: 0px;
+    }
+    .titulos{
+      margin-top: 150px;
+      font-size: 25pt;
+    }
+    .titulo-tg{
+      margin-top: 190px;
+      font-size: 25pt;
+    }
+    .div-cont{
+      justify-content: center;
+    }
+    .sec-form{
+      display: flex;
+      justify-content: center;
+    }
+    .div-video{
+      display: flex;
+      align-items: flex-start;
+      margin-left: -300px;
+      
+
+    }
+    video{
+      width: 450px;
+    }
+  
+   .form-primary{
+   
+    width: 10px;
+   }
+   .form-label{
+
+    flex-wrap: wrap;
+    flex-direction: row ;
+    justify-content: space-between;
+   }
+   #fomulario div{
+    display: flex;
+  
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 20px
+
+   }
+   #botao{
+    margin: 20px
+   }
+   input .form-control{
+    width: 300px;
+   }
+    }
+    
+    

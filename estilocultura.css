@@ -1,0 +1,606 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{ /*Definindos as cores e tipos de letra para todo HTML*/ 
+    --preto: #0000;
+    --branco: #ffff;
+    --castaho:  #663300;
+    --amarelo: #ffcc00;
+    --vermelho: #ff0000;
+    --tipo-letra: "arial", Helvetica, sans-sarif;
+}
+
+body{ /*Estilizando o corpo da pagina */
+    background-color: var(--branco);
+    font-family: var(--tipo-letra);
+    max-width: 1600px;
+}
+a{ /*Estilizando o link */
+        text-decoration: none;
+}
+ul{ 
+        list-style: none;
+ }
+
+  input[type=text]:focus {
+    width: 100%;
+  }
+input[type=text]:focus {
+    width: 100%;
+  }
+
+.in-Pesquisar:hover{
+    background-color: rgb(250, 249, 249); 
+    border-bottom: 1px solid var(--vermelho); 
+
+}
+.bt-pesquisar{
+    background-color: var(--vermelho);
+    border-bottom: 1px solid var(--vermelho);
+    border: none;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.div-bemvindo{
+    color: var(--amarelo);
+    display: block;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 550px;
+    align-self: center;
+    
+}
+.h-bemvindo{
+    text-align: center;
+    font-size: 40px;
+   
+}
+.div-menu{
+    
+    box-shadow:  1px 2px 3px black;
+}
+.nav-menu{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 6rem;
+}
+.div-logo-form-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.div-menu-logo{
+    margin-left: 0px;
+    display: block;
+}
+
+.div-img-angola{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.u-lista{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+    margin-top: 20px;
+    margin-right: -0px;
+}
+.a-link{
+    padding: 20px 10px;
+    color: var(--amarelo);
+    text-decoration: none;
+}
+.a-link:hover{
+    color: var(--branco);
+    border-bottom: 1px solid var(--branco);
+    transition: 0.5s;
+}
+.form-group{
+  
+}
+.content {
+    padding: 16px;
+  }
+
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+.div-mobile-menu-icon{
+    display: none;
+}
+.div-mobile-menu{
+    display: none;
+}
+ul{
+    list-style: none;
+}
+.li-link{
+    padding: 20px 10px;
+}
+.titulos{
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0px auto;
+    text-align: center;
+    padding: 25px 0px;
+}
+hr{
+    border: none;
+    height: 3px;
+    width: 200px;
+    margin: 20px auto;
+    background-color: var(--vermelho);
+
+}
+p{
+    line-height: 21.25px;
+    padding: 0px 10px;
+}
+
+
+.footer{
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-around;
+    padding: 55px calc( (100% - 960px)/2);
+    
+    margin: 0px;
+}
+.div-footer{
+    
+
+}
+.copright{
+    display: block;
+    align-items:center ;
+    margin-top: 200px;
+    border: 1px solid red;
+    color: var(--branco);
+    margin-left: -200px;
+}
+
+.div-rodapes-redes{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+    align-items: center;
+    padding: 10px;
+    margin-left: -400px;
+    color: var(--branco);
+}
+.div-rodapes-redes ul{
+    display: flex;
+    flex-direction: row;
+    
+
+    
+}
+.div-rodapes-redes li{
+    margin: 10px;
+    
+
+}
+
+.footerlogo{
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+}
+
+.menu-logo{
+    display: flex;
+    align-items: center;
+}
+.menu-logo h1{
+    color: #ffff;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+}
+.menu-logo h1{
+    color: #ffff;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav, .nav-lista{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.li-lista{
+    margin: 0 15px;
+}
+
+
+.div-column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.div-column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .div-container-cadastro {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .div-container-cadastro {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  /*portifolio*/
+
+  /* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .di-row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .di-row,
+  .di-row > .di-column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .di-column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .di-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .di-contente {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .di-column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /*portifolio */
+
+
+  
+
+@media screen and (max-width: 730px) {
+    .nav-menu{
+        padding: 1.5rem 4rem;
+    }
+    .u-lista{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    
+    .div-mobile-menu-icon{
+        display: block;
+        justify-content: flex-start;
+    }
+    .div-mobile-menu-icon button{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+    .div-mobile-menu ul{
+       display: flex; 
+        flex-direction: column;
+        text-align: start;
+        padding-bottom: 0.2rem;
+    
+    }
+    .li-lista{
+        padding: 0 0  -25px 0;
+        width: 100%;
+        font-size: 2rem;
+        margin-left: -60px;
+    }
+    .li-lista:hover{
+        background-color: #ffcc00;
+        color: #ffff;
+        
+    }
+    .a-link {
+        padding-top: 1.2rem;
+        padding-left: 10px;
+        padding-right: 180px;
+    }
+    .a-link:hover{
+        color: var(--branco);
+    }
+    .div-mobile-menu{
+        padding: 1rem 2rem;
+
+    } 
+    
+    .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .div-mobile-menu, .login-button button {
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .form-pesquisar{
+        display: none;
+    }
+    .carousel{
+        display: none; 
+    }
+    .div-rodapes-redes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer{
+        display: flex;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+    }
+    .in-email {
+        max-width: 250px;
+    }
+    .h-bemvindo{
+        display: none;
+    }
+    .copright{
+        margin: 0px;
+    }
+    
+    }
